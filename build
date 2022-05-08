@@ -7,6 +7,7 @@ while [ "$count" -lt 20 ]; do
     count=$((count + 1))
 
     color_code=$((31 + (count % 7)))
+	printf "\nNewly added print statement for testing the build script\n"
     printf "\e[01;${color_code}mBuilding [$count of 20]\e[00m\n"
 
     sleep 1
